@@ -4,7 +4,7 @@ html{
 }
 body{
     background-color: aliceblue;
-    padding-top: 85px;
+    padding-top: 5%;
 }
 .wrapper{
     max-width: 50%;
@@ -106,12 +106,13 @@ span:last-child{
 }
 
 .wrapper-content{
-    padding-top: 15px;
+    padding-top: 2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
    
 }
+
 @media (max-width: 730px) {
     .wrapper-content{
         display: flex;
