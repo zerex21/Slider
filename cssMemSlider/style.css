@@ -112,3 +112,15 @@ span:last-child{
     align-items: center;
    
 }
+@media (max-width: 730px) {
+    .wrapper-content{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .wrapper-content{
+    align-items: inherit;
+    }
+    .dot-wrapper:last-child{
+        margin-right: 10px;
+    }
+}
