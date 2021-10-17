@@ -1,0 +1,127 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aliceblue;
+    padding-top: 5%;
+}
+.wrapper{
+    max-width: 50%;
+    margin: 0 auto;
+}
+.flex-wrapper{
+    width: 100%;
+    border-radius: 3%;
+    display: flex;
+    justify-content: center;
+}
+.slider-wrapper{
+    border-radius: 3%;
+    height: 30vw;
+    width: 100%;
+    box-shadow: 10px 10px 44px -10px rgba(0,0,0,0.75);
+    position: relative;
+}
+
+.slide{
+    
+    width: 100%;
+    height: 100%;
+    display: none;    
+}
+
+.slide.active{
+    display: block;
+    animation-name: Appearance;
+    animation-duration: 3s;
+}
+@-webkit-keyframes Appearance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+img{
+    border-radius: 3%;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.dot{
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: gray;
+    margin-right: 10px;
+    cursor: pointer;
+    margin: 25% 25%;
+    border: 2px solid gray;
+   
+}
+
+.dot:hover{
+    background-color: white; 
+}
+
+.dot:last-child{
+    margin-right: 0;
+}
+
+.dot-wrapper{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.dot-wrapper:last-child{
+    margin-right: 0;
+}
+
+
+.dots-wrapper{
+    display: flex;
+    justify-content: center;
+
+}
+
+.dot.active{
+    background-color: #000000;
+}
+
+span:last-child{
+    margin-right: 0;
+}
+
+.text{
+    display: none;
+}
+.text.active{
+    display: block;
+    animation-name: Appearance;
+    animation-duration: 3s;
+}
+
+.wrapper-content{
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+@media (max-width: 730px) {
+    .wrapper-content{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .wrapper-content{
+    align-items: inherit;
+    }
+    .dot-wrapper:last-child{
+        margin-right: 10px;
+    }
+}
